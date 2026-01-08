@@ -1,0 +1,11 @@
+fetch_listings_task:
+  description: "Use the MCPBookingTool to fetch real accommodation listings for {location} between {check_in} and {check_out} for {guests} guests."
+  expected_output: "A JSON list of listings including property_name, price, rating, and cancellation_policy."
+
+analyze_preferences_task:
+  description: "Rank listings based on user preferences: {preferences}."
+  expected_output: "A ranked list of hotels with explanations of why they were chosen."
+
+recommend_task:
+  description: "Recommend the top 3 hotels in markdown table format with reasons."
+  expected_output: "A markdown table with columns: Hotel Name, Price, Rating, Reasons."

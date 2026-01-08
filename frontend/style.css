@@ -1,0 +1,21 @@
+body { font-family: Arial; background: #f8f9fa; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.chat-container { width: 90%; max-width: 600px; background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 0 10px #ccc; }
+#chat-box { height: 400px; overflow-y: auto; background: #f0f0f0; padding: 10px; border-radius: 6px; margin-bottom: 10px; }
+.input-container { display: flex; }
+input { flex: 1; padding: 10px; border-radius: 6px; border: 1px solid #ccc; }
+button { background: #007bff; color: white; border: none; border-radius: 6px; padding: 10px 15px; margin-left: 10px; cursor: pointer; }
+
+/* Remove browser yellow autofill background and focus outlines */
+input:focus, button:focus, textarea:focus, select:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+/* Chrome/Edge autofill override */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+	box-shadow: 0 0 0px 1000px #fff inset !important;
+	-webkit-text-fill-color: #000 !important;
+}
